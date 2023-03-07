@@ -1,0 +1,31 @@
+{
+  "name": "ldap-group-checker",
+  "version": "0.0.1",
+  "description": "simple web page to check ldap group info in node.js",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "ldapjs": "^3.0.0",
+    "request": "^2.88.2",
+    "jsonwebtoken": "^9.0.0",
+    "mocha": "^2.4.5"
+  },
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "IP=0.0.0.0 PORT=3030 mocha --timeout 5000 tests/*_test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/molnars/plays.git"
+  },
+  "author": "msz, sm5882@outlook.com",
+  "license": "CC-BY-1.0",
+  "bugs": {
+    "url": "http://github.com/molnars/plays/issues"
+  },
+  "homepage": "http://github.com/molnars/plays"
+}
