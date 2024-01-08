@@ -45,11 +45,11 @@ app.get('/', (req, res) => {
     const clusterAdminRole = body.metadata.annotations['user.openshift.io/cluster-admin'];
 
     if (clusterAdminRole !== 'true') {
-      res.send('You do not have cluster admin rights');
+      res.send('You do not have rights');
       return;
     }
 
-    res.send('You have cluster admin rights');
+    res.send('You have rights');
   });
 });
 
