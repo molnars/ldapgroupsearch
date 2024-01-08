@@ -10,7 +10,7 @@ app.use((req, res, next) => {
   const accessToken = req.headers.authorization?.split(' ')[1];
 
   if (!accessToken) {
-    res.status(401).send('Unauthorized');
+    res.status(401).send('Unauthorized\n no token\n');
     return;
   }
 
