@@ -7,6 +7,7 @@ const app = express();
 
 // Middleware to verify the OAuth access token and extract the user ID
 app.use((req, res, next) => {
+  console.log(req.headers.authorization);
   const accessToken = req.headers.authorization?.split(' ')[1];
 
   if (!accessToken) {
